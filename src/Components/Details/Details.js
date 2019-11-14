@@ -93,14 +93,28 @@ class ConnectedDetails extends Component {
               fontFamily: "Georgia"
             }}
           >
-            Title: <i style={{color: "red"}}> {this.state.item.name}</i>
+            Title: <i style={{color: "#cc7c7c"}}> {this.state.item.name}</i>
+          </div>
+
+          {/*Item author */}
+          <div
+            style={{
+              marginTop: 160,
+              marginLeft: -750,
+              width: 700,
+              height: 30,
+              fontSize: 25,
+              fontFamily: "Georgia"
+            }}
+          >
+            Author: <i style={{color: "#4699b8"}}> {this.state.item.author}</i>
           </div>
 
           {/* Item description */}
           <div>
             <div
               style={{
-                marginTop: 160,
+                marginTop: 200,
                 marginBottom: 10,
                 marginLeft: -700,
                 fontSize: 20

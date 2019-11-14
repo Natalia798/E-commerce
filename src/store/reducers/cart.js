@@ -22,7 +22,7 @@ const reducer = (state = initialState, action) => {
       return { ...state, cartItems: state.cartItems.concat(action.payload) };
     }
     case actionTypes.SHOW_CART_DLG: return { ...state, showCartDialog: action.payload };
-    case actionTypes.DELETE_CART_ITEM: return {...state, cartItems: state.cartItems.filter(x => x.id !== action.payload) };
+    case actionTypes.DELETE_CART_ITEM: return {...state, cartItems: state.cartItems.filter(x => x.id !== action.payload)};
     case actionTypes.TOGGLE_MENU: return { ...state, showMenu: !state.showMenu };
     case actionTypes.SET_CHECKEDOUT_ITEMS: return { ...state, checkedOutItems: action.payload };
     case actionTypes.UPDATE_CART_ITEM_QUANTITY: {

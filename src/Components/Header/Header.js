@@ -36,7 +36,7 @@ class ConnectedHeader extends Component {
   state = {
     searchTerm: "",
     anchorEl: null,
-    categoryFilterValue: categories[0].name
+    categoryFilterValue: categories[0].name,
   };
 
   render() {
@@ -66,7 +66,7 @@ class ConnectedHeader extends Component {
               label="Search products"
               value={this.state.searchTerm}
               onChange={e => {
-                this.setState({ searchTerm: e.target.value });
+                this.setState({  searchTerm: e.target.value });
               }}
               style={{ marginLeft: 30, width: 250, marginBottom: 15 }}
             />
@@ -95,7 +95,7 @@ class ConnectedHeader extends Component {
                   "/?category=" +
                     this.state.categoryFilterValue +
                     "&term=" +
-                    this.state.searchTerm
+                    this.state.searchTerm 
                 );
               }}
             >

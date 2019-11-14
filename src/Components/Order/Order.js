@@ -30,7 +30,7 @@ class ConnectedOrder extends Component {
         <Table style={{marginTop: 60}}>
           <TableHead>
             <TableRow>
-              <TableCell style={{fontSize: 18, width: 600}}><b>Item name</b></TableCell>
+              <TableCell style={{fontSize: 18, width: 600}}><b>Product</b></TableCell>
               <TableCell style={{fontSize: 18, width: 600}}><b>Image</b></TableCell>
               <TableCell style={{fontSize: 18, width: 600}}><b>Price</b></TableCell>
               <TableCell style={{fontSize: 18, width: 600}}><b>Quantity</b></TableCell>
@@ -40,7 +40,7 @@ class ConnectedOrder extends Component {
             {this.props.checkedOutItems.map((item, index) => {
               return (
                 <TableRow key={item.id}>
-                  <TableCell style={{fontSize: 18, color: "blue"}}><i>{item.name}</i></TableCell>
+                  <TableCell style={{fontSize: 18, color: "blue"}}><i>{item.name} - {item.author}</i></TableCell>
                   <TableCell>
                     <CardMedia
                       style={{ height: 150, width: 100, backgroundPosition: "top"}}
@@ -64,12 +64,16 @@ class ConnectedOrder extends Component {
           }}
         >
           Total price: {totalPrice} RON
+         
         </div>
-        <Button
+          <Button
           color="primary"
           variant="outlined"
           disabled={totalPrice === 0}
-          onClick={() => { this.props.history.push('/checkout') }}
+          onClick={() => { 
+            this.props.history.push('/checkout');
+            this.props.setCheckedOutItems([]);
+          }}
           style={{ margin: 5, marginTop: 30 }}
         >
           Purchase
@@ -98,7 +102,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    setCheckedOutItems: (items) => dispatch(actions.setCheckedOutItems(items))
+    setCheckedOutItems: (items) => dispatch(actions.setCheckedOutItems(items)),
   }
 }
 

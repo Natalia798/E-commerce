@@ -21,7 +21,7 @@ const CartRow = props => {
               props.showCartDlg(false);
             }}
           >
-            {item.name}
+            {item.name} - {item.author}
           </div>
         </Link>
       </TableCell>

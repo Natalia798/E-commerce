@@ -3,6 +3,7 @@ const sampleProducts = [
   {
     id: 1,
     name: "Ugly Love",
+    author: "Collen Hoover",
     category: "Fiction",
     price: 32,
     description:
@@ -17,6 +18,7 @@ const sampleProducts = [
   {
       id: 2,
       name: "The Silent Patient",
+      author: "Alex Michaelides",
       category: "Fiction",
       price: 47,
       description:
@@ -32,6 +34,7 @@ const sampleProducts = [
   {
     id: 3,
     name: "The Alchemist",
+    author: "Paulo Coelho",
     category: "Fiction",
     price: 37,
     description:
@@ -45,6 +48,7 @@ const sampleProducts = [
   {
     id: 4,
     name: "Angels and Demons",
+    author: "Dan Brown",
     category: "Fiction",
     price: 33,
     description:
@@ -59,6 +63,7 @@ const sampleProducts = [
   {
     id: 5,
     name: "Two can keep a secret",
+    author: "Karen M. McManus",
     category: "Fiction",
     price: 45,
     description:
@@ -72,6 +77,7 @@ const sampleProducts = [
   {
     id: 6,
     name: "Rich dad, poor dad",
+    author: "Robert T. Kiyosaki",
     category: "Business, Economy, Finance",
     price: 60,
     description:
@@ -84,6 +90,7 @@ const sampleProducts = [
   {
     id: 7,
     name: "The richest man in Babylon",
+    author: "George S. Clason",
     category: "Business, Economy, Finance",
     price: 25,
     description:
@@ -96,6 +103,7 @@ const sampleProducts = [
   {
     id: 8,
     name: "GirlBoss",
+    author: "Sophia Amoruso",
     category: "Business, Economy, Finance",
     price: 34,
     description:
@@ -107,6 +115,7 @@ const sampleProducts = [
   {
     id: 9,
     name: "Emotional intelligence in Leadership",
+    author: "Daniel Goleman",
     category: "Business, Economy, Finance",
     price: 74,
     description:
@@ -118,7 +127,8 @@ const sampleProducts = [
   },
   {
     id: 10,
-    name: "Leaders eat the last",
+    name: "Leaders eat last",
+    author: "Simon Sinek",
     category: "Business, Economy, Finance",
     price: 45,
     description:
@@ -133,6 +143,7 @@ const sampleProducts = [
   {
     id: 11,
     name: "Start with what you don't like",
+    author: "Brian Tracy",
     category: "Self Help",
     price: 25,
     description:
@@ -146,6 +157,7 @@ const sampleProducts = [
   {
     id: 12,
     name: "Words that change minds",
+    author: "Shelle Rose Charvet",
     category: "Self Help",
     price: 20,
     description:
@@ -163,6 +175,7 @@ const sampleProducts = [
   {
     id: 13,
     name: "Attitude is everything",
+    author: "Jeff Keller",
     category: "Self Help",
     price: 33,
     description:
@@ -177,6 +190,7 @@ const sampleProducts = [
   {
     id: 14,
     name: "The 5 second rule",
+    author: "Mel Robbins",
     category: "Self Help",
     price: 30,
     description:
@@ -192,6 +206,7 @@ const sampleProducts = [
   {
     id: 15,
     name: "The monk who sold his Ferrari",
+    author: "Robin Sharma",
     category: "Self Help",
     price: 33,
     description:
@@ -207,6 +222,7 @@ const sampleProducts = [
   {
     id: 16,
     name: "The conquest of happiness",
+    author: "Bertrand Russell",
     category: "Psychology, Pedagogy",
     price: 25,
     description:
@@ -218,6 +234,7 @@ const sampleProducts = [
   {
     id: 17,
     name: "Black Swan",
+    author: " Nassim Nicholas Taleb",
     category: "Psychology, Pedagogy",
     price: 40,
     description:
@@ -229,6 +246,7 @@ const sampleProducts = [
   {
     id: 18,
     name: "Thoughts to myself",
+    author: "Marcus Aurelius",
     category: "Psychology, Pedagogy",
     price: 33,
     description:
@@ -243,6 +261,7 @@ const sampleProducts = [
   {
     id: 19,
     name: "The wisdom of psychopaths",
+    author: "Kevin Dutton",
     category: "Psychology, Pedagogy",
     price: 37,
     description:
@@ -257,6 +276,7 @@ const sampleProducts = [
   {
     id: 20,
     name: "Focus",
+    author: "Daniel Goleman",
     category: "Psychology, Pedagogy",
     price: 32,
     description:

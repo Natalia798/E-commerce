@@ -18,18 +18,24 @@ class ConnectedItem extends Component {
   render() {
     return (
       <Card
-        style={{ width: 320, height: 520, margin: 20, display: "inline-block" }}
+        style={{ width: 320, height: 535, margin: 20, display: "inline-block" }}
       >
         <CardActionArea
-        style={{
-          marginBottom: -10
-        }}
+          style={{
+            marginBottom: -10
+          }}
           onClick={() => {
             this.props.history.push("/details/" + this.props.item.id);
           }}
         >
           <CardMedia
-            style={{ height: 400 , width: 270, marginLeft: 25, marginTop: 10, objectFit: "cover"}}
+            style={{
+              height: 400,
+              width: 270,
+              marginLeft: 25,
+              marginTop: 10,
+              objectFit: "cover"
+            }}
             image={this.props.item.image}
           />
           <CardContent style={{ height: 50, padding: 10 }}>
@@ -42,20 +48,54 @@ class ConnectedItem extends Component {
                 textOverflow: "ellipsis"
               }}
             >
-              {this.props.item.name}
+              Title:{" "}
+              <b>
+                <i style={{ color: "#ff9b9b" }}>{this.props.item.name} </i>{" "}
+              </b>
             </div>
-            <div style={{ marginLeft: 15, marginTop: 5, marginBottom: 5 }}>Price: {this.props.item.price} RON</div>
-            <div style={{ color: "#1a9349", fontWeight: "bold", marginLeft: 15}}>
+            <div
+              style={{
+                marginLeft: 15,
+                marginTop: 3,
+                fontWeight: "bold",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis"
+              }}
+            >
+              Author:{" "}
+              <i style={{ color: "#58c0e7" }}>{this.props.item.author}</i>
+            </div>
+            <div
+              style={{
+                marginLeft: 15,
+                marginTop: 3,
+                marginBottom: 5,
+                fontWeight: "bold",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis"
+              }}
+            >
+              Price: <i> {this.props.item.price} RON</i>
+            </div>
+            <div
+              style={{ 
+                color: "#1a9349", 
+                fontWeight: "bold",
+                 marginLeft: 15 
+                }}
+            >
               {this.props.item.popular && "Popular"}
             </div>
           </CardContent>
         </CardActionArea>
         <CardActions
-          style={{ display: "flex", alignItems: "center", height: 40}}
+          style={{ display: "flex", alignItems: "center", height: 40 }}
         >
           <Button
             size="small"
-            style={{ marginRight: 60, marginLeft: 15 }}
+            style={{ marginRight: 60, marginLeft: 11, marginTop: 25, border: "1px solid gray" }}
             onClick={() => {
               this.props.history.push("/details/" + this.props.item.id);
             }}
@@ -65,11 +105,11 @@ class ConnectedItem extends Component {
           </Button>
           <Tooltip title="Add to cart">
             <IconButton
-              style={{ marginLeft: 100}}
+              style={{ marginLeft: 100, marginTop: 25}}
               size="small"
               onClick={e => {
                 e.stopPropagation();
-                this.props.addItemInCart({ ...this.props.item, quantity: 1 }) 
+                this.props.addItemInCart({ ...this.props.item, quantity: 1 });
               }}
               color="primary"
               aria-label="Add to shopping cart"
