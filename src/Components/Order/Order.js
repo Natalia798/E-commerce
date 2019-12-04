@@ -13,8 +13,6 @@ import TableRow from "@material-ui/core/TableRow";
 import CardMedia from "@material-ui/core/CardMedia";
 
 
-
-
 // This component shows the items user checked out from the cart.
 class ConnectedOrder extends Component {
   render() {

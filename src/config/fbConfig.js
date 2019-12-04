@@ -1,18 +1,17 @@
 /* istanbul ignore file */
-import { webApiKey } from '../utils/webApiKey';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
 var firebaseConfig = {
-  apiKey: webApiKey,
-  authDomain: "bookstore-abfca.firebaseapp.com",
-  databaseURL: "https://bookstore-abfca.firebaseio.com",
-  projectId: "bookstore-abfca",
-  storageBucket: "bookstore-abfca.appspot.com",
-  messagingSenderId: "488365116934",
-  appId: "1:488365116934:web:bf2fc054e114e488957d87",
-  measurementId: "G-NXTBG3G0D1"
+  apiKey: "AIzaSyAaulPz_FL8EKPBVwdzmSJehL5HEsf1AR0",
+  authDomain: "bookstore-13f87.firebaseapp.com",
+  databaseURL: "https://bookstore-13f87.firebaseio.com",
+  projectId: "bookstore-13f87",
+  storageBucket: "bookstore-13f87.appspot.com",
+  messagingSenderId: "414044131328",
+  appId: "1:414044131328:web:42ece5a1cb2005325108e5",
+  measurementId: "G-QLX8BTQK13"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

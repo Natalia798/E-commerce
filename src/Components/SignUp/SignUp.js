@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import classes from './SignUp.module.css';
 import Avatar from '@material-ui/core/Avatar';
 import AccountCircleOutlined from '@material-ui/icons/AccountCircleOutlined';
-import PasswordStrengthMeter from './PasswordStrengthMeter/PasswordStrengthMeter';
 import { getOrDefault } from '../../utils/utilities';
 import * as actions from '../../store/actions/index';
 
@@ -186,10 +185,6 @@ export class SignUp extends Component {
                                 onBlur={(event) => this.togglePasswordMeter()}
                                 onChange={(event) => this.handleChange(event)}
                                 required
-                            />
-                            <PasswordStrengthMeter
-                                opened={this.state.passwordOpen}
-                                pass={this.state.password}
                             />
                         </div>
 
