@@ -13,9 +13,11 @@ import TableRow from "@material-ui/core/TableRow";
 import CardMedia from "@material-ui/core/CardMedia";
 
 
+
+
 // This component shows the items user checked out from the cart.
 class ConnectedOrder extends Component {
-  render() {
+  render() { 
     let totalPrice = this.props.checkedOutItems.reduce((accumulator, item) => {
       return accumulator + item.price * item.quantity;
     }, 0);
@@ -77,10 +79,23 @@ class ConnectedOrder extends Component {
           Purchase
         </Button>
         <Button
+          color="primary"
+          variant="outlined"
+          disabled={totalPrice === 0}
+          onClick={() => { 
+            this.props.history.push('/borrow');
+            this.props.setCheckedOutItems([]);
+          }}
+          style={{ margin: 5, marginTop: 30 }}
+        >
+          Borrow
+        </Button>
+        <Button
           color="secondary"
           variant="outlined"
           disabled={totalPrice === 0}
           onClick={() => {
+            this.props.history.push('/');
             this.props.setCheckedOutItems([]);
           }}
           style={{ margin: 5, marginTop: 30 }}
@@ -94,7 +109,8 @@ class ConnectedOrder extends Component {
 
 const mapStateToProps = state => {
   return {
-    checkedOutItems: state.cart.checkedOutItems
+    checkedOutItems: state.cart.checkedOutItems,
+    auth: state.firebase.auth
   };
 };
 

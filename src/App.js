@@ -10,6 +10,7 @@ import Order from "./Components/Order/Order";
 import Login from "./Components/Login/Login";
 import SignUp from './Components/SignUp/SignUp';
 import Checkout from './Components/Checkout/Checkout';
+import Borrow from "./Components/Borrow/Borrow";
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
               <Route path="/signup" exact component={SignUp} />
               <Route path="/order" exact component={Order} />
               <Route path="/checkout" exact component={Checkout} />
+              <Route path="/borrow" exact component={Borrow} />
               <Route
                 component={() => (
                   <div style={{ padding: 20 }}>Page not found</div>

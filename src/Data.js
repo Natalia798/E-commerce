@@ -144,7 +144,7 @@ const sampleProducts = [
     id: 11,
     name: "Start with what you don't like",
     author: "Brian Tracy",
-    category: "Self Help",
+    category: "Self Development",
     price: 25,
     description:
       "Start with what you do not like (Eat That Frog), start from a simple idea: you never have time to finish everything that needs to be done and things or parasitic" +
@@ -158,7 +158,7 @@ const sampleProducts = [
     id: 12,
     name: "Words that change minds",
     author: "Shelle Rose Charvet",
-    category: "Self Help",
+    category: "Self Development",
     price: 20,
     description:
       ' "Words that change minds" deals with:' +
@@ -176,7 +176,7 @@ const sampleProducts = [
     id: 13,
     name: "Attitude is everything",
     author: "Jeff Keller",
-    category: "Self Help",
+    category: "Self Development",
     price: 33,
     description:
       "Why do some people succeed in everything they propose and others do not? What is the difference between them and what could someone do to be among the winners?" +
@@ -191,7 +191,7 @@ const sampleProducts = [
     id: 14,
     name: "The 5 second rule",
     author: "Mel Robbins",
-    category: "Self Help",
+    category: "Self Development",
     price: 30,
     description:
       "By reading this book, you will discover that in just 5 seconds you can:" +
@@ -207,7 +207,7 @@ const sampleProducts = [
     id: 15,
     name: "The monk who sold his Ferrari",
     author: "Robin Sharma",
-    category: "Self Help",
+    category: "Self Development",
     price: 33,
     description:
       "The pages of this book contain wise lessons and practical lessons about:" +
@@ -286,7 +286,78 @@ const sampleProducts = [
       "education, to arts and business.",
     image: "/img/focus.jpg",
     popular: false
-  }
+  },
+  {
+    id: 21,
+    name: "The woman in the window",
+    author: "A.J. Finn",
+    category: "Fiction",
+    price: 40,
+    description: 
+    "It's been ten months since Anna Fox last left home. Ten months when he haunted a ghost through the rooms of his old New York home, lost in memory, too frightened to leave the"+
+    "safety of his own home. Anna's only bridge to the real world is the window of her room, where she sits daily, watching her neighbors. When the Russell family moves across the road,"+
+    "Anna is immediately drawn to it. A perfect family with three members, an echo of the life she once led. But one night, a terrible scream breaks the silence, and Anna witnesses"+
+    "something no one should see. Now he has to do everything he can to uncover the truth about what actually happened. But even if he finds out, will anyone believe it? And can she" +
+    "trust herself?",
+    image: '/img/window.jpg',
+    popular: true
+  },
+  {
+    id: 22,
+    name: "The boy on the Schindler's list",
+    author: "Leon Leyson",
+    category: "Fiction",
+    price: 25,
+    description: 
+    "Leon Leyson was only 10 when the Nazis invaded Poland, and his family was forced to move to a ghetto in Krakow. With incredible luck, perseverance and courage, Leyson manages" +
+    "to survive the sadism of the Nazis. Finally, the generosity and skill of a German man named Oskar Schindler saved Leon's life, as did members of his family, whose names were" +
+    "added to the list of Jewish workers in his factory - a list that became famous Worldwide: Schindler's List. This is the only memoir ever published by a surviving child on " +
+    "Schindler's List and perfectly illustrates the author's dignity.",
+    image: '/img/boy.jpg',
+    popular: false
+  },
+  {
+    id: 23,
+    name: "The lost city",
+    author: "Clive Cussler, Paul Kemprecos",
+    category: "Fiction",
+    price: 48,
+    description: 
+    "The discovery of a body frozen for ninety years in a glacier high in the French Alps seems of unlikely concern to Kurt Austin and the NUMA Special Projects team. " + 
+    "But when those on site are trapped in alpine tunnels flooding with glacial meltwater, Austin can hardly ignore a cry for help. And this near tragedy proves to be no mere" +
+    "accident. For the body held a secret. A secret someone was prepared to kill for.",
+    image: '/img/city.jpg',
+    popular: false
+  },
+  {
+    id: 24,
+    name: "The six pillars of self-confidence",
+    author: "Nathaniel Branden",
+    category: "Self Development",
+    price: 34,
+    description: 
+    " Dr. Branden presents the six pillars of self-confidence: six practices that we can apply in everyday life. For the first time we have at hand a series of simple, but"+
+    "effective exercises that emphasize self-awareness and efficiency of each one of us. Exploring the importance of self-respect in the workplace, in the relationship" +
+    "between parents and children, in education, psychotherapy and society, Dr. Branden offers helpful tips to those responsible for developing self-respect in others and" +
+    "explains why it is imperative to cultivate self-respect. itself in the 21st century. ",
+    image: '/img/pillars.jpg',
+    popular: true
+  },
+  {
+    id: 25,
+    name: "The Hate U Give",
+    author: "Angie Thomas",
+    category: "Fiction",
+    price: 46,
+    description: 
+    "A powerful and brave YA novel about what prejudice looks like in the 21st century. Sixteen-year-old Starr lives in two worlds: the poor neighborhood where she was born " +
+    "and raised and her posh high school in the suburbs. The uneasy balance between them is shattered when Starr is the only witness to the fatal shooting of his unarmed best friend,"+
+    "Khalil, by a police officer. Now what Starr says could destroy his community. It could also get her killed. Inspired by the Black Lives Matter movement, this is a powerful and " +
+    "gripping YA novel about one girl's struggle for justice. Movie rights have been sold to Fox, with Amandla Stenberg (The Hunger Games) to star.",
+    image: '/img/hate.jpg',
+    popular: true
+  },
+
 
 ];
 
@@ -295,8 +366,8 @@ const categories = [
   { name: "All categories" },
   { name: "Fiction" },
   { name: "Business, Economy, Finance" },
-  { name: "Self Help" },
-  { name: "Psychology, Pedagogy" }
+  { name: "Self Development" },
+  { name: "Psychology, Pedagogy" },
 ];
 
 // Generate data for rendering menu on the left.
